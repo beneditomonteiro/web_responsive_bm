@@ -7,11 +7,11 @@
         t-inherit="mail.Chatter"
         t-inherit-mode="extension"
     >
-<!-- Disabled by beneditomonteiro - component not in Odoo 19:         <xpath expr="//SuggestedRecipientsList" position="attributes"> -->
-<!-- Disabled by beneditomonteiro - component not in Odoo 19:             <attribute name="styleString">''</attribute> -->
-<!-- Disabled by beneditomonteiro - component not in Odoo 19:         </xpath> -->
+        <xpath expr="//SuggestedRecipientsList" position="attributes">
+            <attribute name="styleString">''</attribute>
+        </xpath>
         <xpath
-            expr="//button[contains(@class,'o-mail-Chatter-sendMessage')]"
+            expr="//button[hasclass('o-mail-Chatter-sendMessage')]"
             position="replace"
         >
             <button
@@ -29,7 +29,7 @@
                 <span class="d-none d-sm-inline">Send message</span>
             </button>
         </xpath>
-        <xpath expr="//button[contains(@class,'o-mail-Chatter-logNote')]" position="replace">
+        <xpath expr="//button[hasclass('o-mail-Chatter-logNote')]" position="replace">
             <button
                 class="o-mail-Chatter-logNote btn text-nowrap me-2"
                 t-att-class="{
@@ -46,13 +46,13 @@
             </button>
         </xpath>
         <xpath
-            expr="//button[contains(@class,'o-mail-Chatter-activity')]/span"
+            expr="//button[hasclass('o-mail-Chatter-activity')]/span"
             position="before"
         >
             <i class="fa fa-clock-o me-sm-1" />
         </xpath>
         <xpath
-            expr="//button[contains(@class,'o-mail-Chatter-activity')]/span"
+            expr="//button[hasclass('o-mail-Chatter-activity')]/span"
             position="attributes"
         >
             <attribute name="class" add="d-none d-sm-inline" separator=" " />

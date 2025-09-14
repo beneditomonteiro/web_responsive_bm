@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Test file by beneditomonteiro to verify asset reloading -->
+<templates>
+    <t t-name="web_responsive.test_reload">
+        <div>If you see this in console, assets are reloading: TIMESTAMP_1757814398</div>
+    </t>
+</templates>
